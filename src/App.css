@@ -1,0 +1,18 @@
+#app-exercises-display {
+	display: flex;
+	min-height: calc(100vh - 140px);
+	max-height: calc(100% - 140px);
+}
+
+#app-exercises-display > div {
+	flex: 50%;
+	padding: 20px;
+	border-left: 40px solid;
+	border-right: 40px solid;
+}
+
+.box {
+	border: 1px black solid;
+	padding: 10px;
+	margin: 10px;
+}
