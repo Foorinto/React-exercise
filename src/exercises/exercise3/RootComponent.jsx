@@ -47,7 +47,7 @@ const RootComponent = () => {
 		let numberRef = number;
 		let result = [];
 
-		for (var i = 0; numberRef > 0 && i < moneyAvilable.length; i++) {
+		for (let i = 0; numberRef > 0 && i < moneyAvilable.length; i++) {
 			let value = moneyAvilable[i];
 
 			if (value <= numberRef) {
@@ -97,9 +97,9 @@ const RootComponent = () => {
 					{ numberForm && <>
 						<p className='mt-0 mb-0 p-1 px-3'>Change for { numberForm } € = </p>
 						<div className='border-2 border-dark border-start p-1'>
-							{changeResult.map(function(val, index){
+							{ changeResult.map(function(val, index){
 								return <p className='mb-0 mt-0 px-2' key={ index }>{ val } x { index } €</p>;
-							})}
+							}) }
 						</div>
 						</>
 					}
